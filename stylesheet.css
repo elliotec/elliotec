@@ -1,0 +1,214 @@
+html, body {
+	font-family: 'Oxygen', sans-serif;
+	background-color: #202020;
+	color: #848484;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	min-height: 100%;
+}
+
+.page {
+	width: 960px;
+	padding: 10px;
+	margin: auto;
+	min-height: 100%;
+}
+
+h1 {
+	font-size: 20pt;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+	position: relative;
+	right: 20px;
+	font-size: 22pt;
+}
+
+h3 {
+	text-align: center;
+	position: relative;
+	right: 20px;
+}
+
+h4 {
+	display: inline;
+	font-weight: normal;
+	color: #5AC98D;
+}
+
+.scrollarrow {
+	position: relative;
+	margin-bottom: 10px;
+	margin-top: -10px;
+}
+
+a {
+	color: #1B6E41;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #5AC98D;
+}
+
+nav {
+	font-size: 18pt;
+}
+
+
+.logo {
+	margin: 20px auto 20px;
+	width: 460px;
+}
+
+.portfolio {
+	margin: auto;
+	width: 500px;
+	position: relative;
+	right: 70px;
+}
+
+.portfolio p {
+	position: relative;
+	text-align: center;
+	margin-top: -2px;
+	margin-bottom: 40px;
+	right: 20px;
+}
+
+#textarea {
+	border: none;
+	overflow: auto;
+	height: 500px;
+	width: 700px;
+	padding: auto;
+	position: relative;
+}
+
+#wrapper {
+  overflow: hidden;
+  width: 600px;
+  height: 500px;
+}
+
+.shake {
+	display: inline-block;
+	padding: 5px 15px 5px;
+}
+
+.navbar {
+	text-align: center;
+	width: 400px;
+	margin: -126px auto 60px;
+	position: relative;
+	left: 10px;
+}
+
+.social {
+	position: relative;
+	left: 385px;
+	margin-top: 30px;
+	margin-bottom: 180px;
+}
+
+.contact {
+	position: relative;
+	left: 15px;
+}
+
+.headshot {
+	position: relative;
+	left: 50px;
+	float: left;
+	clear: right;
+}
+
+.about1 {
+	float:left;
+	position: relative;
+	left: 150px;
+	margin-top: 0;
+}
+
+.about2 {
+	float:left;
+	position: relative;
+	left: 150px;
+	margin-top: 30px;
+
+}
+
+.about3 {
+	float:left;
+	position: relative;
+	left: 150px;
+	margin-top: 30px;
+}
+
+.about4 {
+	float:left;
+	position: relative;
+	left: 150px;
+	margin-top: 30px;
+	margin-bottom: 180px;
+}
+
+.screenshots {
+	position: relative;
+	left: 40px;
+}
+
+footer {
+	text-align: center;
+	margin-top: 20px;
+	clear: both;
+}
+
+.footnav {
+	border-top: solid 1px #005f2c;
+	border-bottom: solid 1px #005f2c;
+	width: 930px;
+	position: relative;
+}
+
+.footnav li {
+	display: inline;
+	list-style: none;
+	text-decoration: none;
+	font-size: 10pt;
+	padding: 25px 50px 25px;
+	position: relative;
+	right: 20px;
+}
+
+.copy {
+	font-size: 9pt;
+}
+
+span {
+	color: #009245;
+	font-size: 
+}
+/* Social Media Icons/Links */
+
+.mud-social { list-style: none; padding: 0; margin: 0; overflow: hidden;}
+.mud-social li { float: left; margin-left: 5px; }
+.mud-social li:nth-child(1) { margin-left: 0;}
+.mud-social li a { width:44px; height: 44px; display: block; background:url("images/social-media-pack-html.png") no-repeat; text-indent: -9999px; }
+li.facebook a { background-position: 0 0}
+li.facebook a:hover { background-position: 0 -44px}
+li.googleplus a { background-position: -88px 0}
+li.googleplus a:hover { background-position: -88px -44px}
+li.linkedin a { background-position: -132px 0}
+li.linkedin a:hover { background-position: -132px -44px}
+
+/* End social media icons */
+
+.servicez {
+    width: 600px;
+    margin: auto;
+}
+

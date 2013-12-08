@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="author" content="Mike Elliott">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Description" content="elliotec. Website design, development, hosting, optimization, and matinence. Specializing in web sites for small businesses and artists of all types."/>
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+
+<title>elliotec | web design &amp; development</title>
+</head>
+<body>
+	<div class="page">
+		<header>
+			<div class="logo"><a href="index.html"><img src="images/ellioteclogo.png"></a></div>
+
+			<canvas id="navpaths" width="960" height="150"></canvas>
+			<script>
+				var flowpath = document.getElementById("navpaths"); 
+			 	var context = flowpath.getContext ("2d"); 
+
+			 	context.beginPath();
+    	 	context.moveTo(50,50)
+    	 	context.lineTo(910,10)
+
+    	 	context.lineWidth = 2;
+    	 	context.strokeStyle = '#005F2C';
+    	 	context.stroke();
+
+    	 	context.beginPath();
+    	 	context.moveTo(50,50)
+    	 	context.lineTo(910,90)
+
+    	 	context.lineWidth = 2;
+    	 	context.strokeStyle = '#005F2C';
+    	 	context.stroke();
+
+    	 	context.beginPath();
+    	 	context.moveTo(50,90)
+    	 	context.lineTo(910,50)
+    	 	
+    	 	context.lineWidth = 2;
+    	 	context.strokeStyle = '#005F2C';
+    	 	context.stroke();
+
+    	 	context.beginPath();
+    	 	context.moveTo(50,10)
+    	 	context.lineTo(910,50)
+    	 	
+    	 	context.lineWidth = 2;
+    	 	context.strokeStyle = '#005F2C';
+    	 	context.stroke();
+			</script>
+
+			<nav>
+				<div class="navbar">
+					<a class="shake" href="about.html">about</a>
+					<a class="shake" href="services.html">services</a>
+					<a class="shake" href="contact.html">contact</a>
+				</div>
+			</nav>
+		</header>
+		<img class="headshot" src="images/mike.jpg">
+		<p class="about1">I am a web designer and developer based in Salt Lake City, Utah.</p>
+		<p class="about2">I like minimal design and intuitive navigation in websites.</p>
+		<p class="about3">I use Linux and other open-source software as tools.</p>
+		<p class="about4">I have experience in Unix, HTML5, CSS3, JavaScript, Ruby on Rails, and more.</p>
+
+		<footer>
+	 	<ul class="footnav">
+	 		<li><a href="index.html">portfolio</a></li>
+	 		<li><a href="about.html">about</a></li>
+	 		<li><a href="services.html">services</li>
+	 		<li><a href="contact.html">contact</a></li>
+	 		<li><a href="sitemap.xml">sitemap</a></li>
+	 	</ul>
+	 	<p class="copy">&copy; elliotec</p>
+	 </footer>	
+	</div>
+
+<!-- jRumble -->
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jrumble.1.3.js"></script>
+<script type="text/javascript" charset="UTF-8">
+$(function (){
+	var shakeTimeout
+	$('.shake').jrumble();
+	clearTimeout(shakeTimeout)
+	$('.shake').mouseenter(function (event) {
+		$(event.target).trigger('startRumble');
+		shakeTimeout = setTimeout(function () { $(event.target).trigger('stopRumble');}, 200);
+	});
+});
+</script>
+<!--jRumble END -->
+</body>
+</html>

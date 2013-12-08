@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="author" content="Mike Elliott">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Description" content="Web design, development, hosting, optimization, and maintenance. Specializing in web sites for small businesses and artists of all types."/>
+
+<!-- Kill scrollbar (works better in <head>)-->
+<script type="text/javascript" charset="utf-8">
+// get the width of the textarea minus scrollbar
+	var textareaWidth = document.getElementById("textarea").scrollWidth;
+
+	// width of the wrapper equals width of the inner part of the textarea
+	document.getElementById("wrapper").style.width = textareaWidth + 'px';
+</script>
+<!-- End Kill scrollbar -->
+<meta name="google-site-verification" content="LCB9cybOJyMM7Z-MHeSlX2Jwvq67QBoVytlz3iFu4KI" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+<link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+
+<title>elliotec | web design &amp; development</title>
+</head>
+<body>
+	<div class="page">
+		<header>
+			<div class="logo"><a href="index.html"><img src="images/ellioteclogo.png"></a></div>
+
+			<div id="transform" "data-100="transform:scale(0) rotate(0deg);" data-200="transform:scale(1) rotate(1440deg);opacity:1;" data-500="" data-1700="transform:scale(7)""><canvas id="navpaths" width="960" height="150" data-500="transform:scale(0) rotate(0deg);" data-1000="transform:scale(1) rotate(1440deg);opacity:1;" ></canvas></div>
+			<script>
+				var flowpath = document.getElementById("navpaths"); 
+			 	var context = flowpath.getContext ("2d"); 
+
+			 	context.beginPath();
+    	 	context.moveTo(50,50)
+    	 	context.lineTo(910,10)
+
+    	 	context.lineWidth = 2;
+    	 	context.strokeStyle = '#005F2C';
+    	 	context.stroke();
+
+    	 	context.beginPath();
+    	 	context.moveTo(50,50)
+    	 	context.lineTo(910,90)
+
+    	 	context.lineWidth = 2;
+    	 	context.strokeStyle = '#005F2C';
+    	 	context.stroke();
+
+    	 	context.beginPath();
+    	 	context.moveTo(50,90)
+    	 	context.lineTo(910,50)
+    	 	
+    	 	context.lineWidth = 2;
+    	 	context.strokeStyle = '#005F2C';
+    	 	context.stroke();
+
+    	 	context.beginPath();
+    	 	context.moveTo(50,10)
+    	 	context.lineTo(910,50)
+    	 	
+    	 	context.lineWidth = 2;
+    	 	context.strokeStyle = '#005F2C';
+    	 	context.stroke();
+			</script>
+
+			<nav>
+				<div class="navbar">
+					<a class="shake" href="about.html">about</a>
+					<a class="shake" href="services.html">services</a>
+					<a class="shake" href="contact.html">contact</a>
+				</div>
+			</nav>
+		</header>
+		<div class="portfolio">
+			<div id="wrapper">
+				<div id="textarea">
+					<h3>Some recent projects:</h3>
+						<a href="http://www.makaelaphoto.com"><img src="images/mvhpscreenshot.png" class="screenshots" ></a>
+							<a href="http://www.makaelaphoto.com"><p>Makaela Herran Fine Art Photography</p></a>
+						<a href="http://www.proflowhvac.com"><img src="images/proflowhvacscreenshotsmall.png" class="screenshots"></a>
+							<a href="http://www.proflowhvac.com"><p>Pro Flow HVAC</p></a>
+						<a href="http://http://limitless-garden-2861.herokuapp.com/"><img src="images/railsprojectscreenshot.png" class="screenshots"></a>
+							<a href="http://http://limitless-garden-2861.herokuapp.com/"><p>Rails Project</p></a>
+					<h3>More coming soon!</h3>
+				</div>
+			</div>
+		</div>
+	 <footer>
+	 	<ul class="footnav">
+	 		<li><a href="index.html">portfolio</a></li>
+	 		<li><a href="about.html">about</a></li>
+	 		<li><a href="services.html">services</li>
+	 		<li><a href="contact.html">contact</a></li>
+	 		<li><a href="sitemap.xml">sitemap</a></li>
+	 	</ul>
+	 	<p class="copy">&copy; elliotec</p>
+	 </footer>	
+	</div>
+
+<!-- jRumble -->
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jrumble.1.3.js"></script>
+<script type="text/javascript" charset="UTF-8">
+$(function (){
+	var shakeTimeout
+	$('.shake').jrumble();
+	clearTimeout(shakeTimeout)
+	$('.shake').mouseenter(function (event) {
+		$(event.target).trigger('startRumble');
+		shakeTimeout = setTimeout(function () { $(event.target).trigger('stopRumble');}, 200);
+	});
+});
+</script>
+<!--jRumble END -->
+
+<!-- skrollr -->
+<script type="text/javascript" src="js/skrollr.min.js"></script>
+	<script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+	</script>
+	<!-- skrollr END-->
+</body>
+</html>
